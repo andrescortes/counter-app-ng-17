@@ -1,0 +1,5 @@
+<h3>Counter: <strong>{{ counter }}</strong></h3>
+<div class="button-group">
+  <app-button-decrement [counter]="counter" (counterChange)="decrement($event)"></app-button-decrement>
+  <app-button-add [counter]="counter" (counterChange)="increment($event)"></app-button-add>
+</div>

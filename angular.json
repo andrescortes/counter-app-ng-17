@@ -37,7 +37,8 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "optimization": false
           },
           "configurations": {
             "production": {
@@ -53,7 +54,8 @@
                   "maximumError": "4kb"
                 }
               ],
-              "outputHashing": "all"
+              "outputHashing": "all",
+              "optimization": true
             },
             "development": {
               "optimization": false,
