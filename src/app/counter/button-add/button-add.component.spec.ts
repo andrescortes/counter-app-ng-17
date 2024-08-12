@@ -1,5 +1,5 @@
-import {ComponentFixture, TestBed} from "@angular/core/testing";
-import {ButtonAddComponent} from "./button-add.component";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { ButtonAddComponent } from "./button-add.component";
 
 describe('ButtonAddComponent', () => {
   let fixture: ComponentFixture<ButtonAddComponent>;

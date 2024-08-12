@@ -1,7 +1,7 @@
-import {ComponentFixture, TestBed} from "@angular/core/testing";
-import {ButtonDecrementComponent} from "./button-decrement.component";
-import {By} from "@angular/platform-browser";
-import {DebugElement} from "@angular/core";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { ButtonDecrementComponent } from "./button-decrement.component";
+import { By } from "@angular/platform-browser";
+import { DebugElement } from "@angular/core";
 
 describe('ButtonDecrementComponent', () => {
   let fixture: ComponentFixture<ButtonDecrementComponent>;

@@ -1,9 +1,9 @@
-import {CounterComponent} from "./counter.component";
-import {ComponentFixture, TestBed} from "@angular/core/testing";
-import {By} from "@angular/platform-browser";
-import {ButtonDecrementComponent} from "./button-decrement/button-decrement.component";
-import {ButtonAddComponent} from "./button-add/button-add.component";
-import {DebugElement} from "@angular/core";
+import { CounterComponent } from "./counter.component";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { By } from "@angular/platform-browser";
+import { ButtonDecrementComponent } from "./button-decrement/button-decrement.component";
+import { ButtonAddComponent } from "./button-add/button-add.component";
+import { DebugElement } from "@angular/core";
 
 describe('CounterComponent', (): void => {
   let fixture: ComponentFixture<CounterComponent>;

@@ -35,7 +35,7 @@
   align-items: center;
 }
 
-.button {
+.btn {
   background-color: #4CAF50;
   border: none;
   color: white;
@@ -49,6 +49,6 @@
   margin: 4px 2px;
 }
 
-.button:active{
+.btn:active{
   animation: bounce 0.2s;
 }
