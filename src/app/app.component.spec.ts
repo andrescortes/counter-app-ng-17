@@ -34,6 +34,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('h1')?.textContent).toContain('Counter-app');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Video App');
   });
 });

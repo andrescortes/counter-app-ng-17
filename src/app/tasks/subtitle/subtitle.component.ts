@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TasksService } from "../services/tasks.service";
 
 @Component({
   selector: 'app-subtitle',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class SubtitleComponent {
 
+  constructor(private readonly tasksService: TasksService) {
+  }
+
+  get items(): number {
+    return this.tasksService.tasks.length;
+  }
 }

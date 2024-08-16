@@ -9,28 +9,22 @@
     </tr>
     </thead>
     <tbody>
-    <tr *ngFor="let task of tasks; index as i">
+    <tr *ngFor="let item of tasksList; index as i">
       <td>{{ i + 1 }}</td>
-      <td>{{ task }}</td>
+      <td [ngClass]="item.completed ? 'is-underlined': ''" >{{ item.task }}</td>
       <td>
-        <button class="button is-small is-link">Complete</button>
+        <button
+          class="button is-small is-link"
+          [ngClass]="item.completed ? 'is-success': ''"
+          (click)="complete(item.task)"
+          [disabled]="item.completed"
+        >Complete
+        </button>
       </td>
       <td>
-        <button class="button is-small is-danger">Delete</button>
+        <button class="button is-small is-danger" (click)="deleteTask(i)" [disabled]="!item.completed">Delete</button>
       </td>
     </tr>
-    <!--      @for (task of tasks; track task; let i = $index) {-->
-    <!--        <tr>-->
-    <!--          <td>{{ i + 1 }}</td>-->
-    <!--          <td>{{ task }}</td>-->
-    <!--          <td>-->
-    <!--            <button class="button is-small is-link">Complete</button>-->
-    <!--          </td>-->
-    <!--          <td>-->
-    <!--          <button class="button is-small is-danger">Delete</button>-->
-    <!--          </td>-->
-    <!--        </tr>-->
-    <!--      }-->
     </tbody>
   </table>
 </div>

@@ -52,7 +52,7 @@ describe('ButtonDecrementComponent', () => {
     it('should increment when on press button', () => {
       component.counter = 5;
       let debugElement: DebugElement = fixture.debugElement;
-      const btn: HTMLButtonElement = debugElement.query(By.css('.button')).nativeElement;
+      const btn: HTMLButtonElement = debugElement.query(By.css('.btn')).nativeElement;
       btn?.click();
 
       fixture.detectChanges();

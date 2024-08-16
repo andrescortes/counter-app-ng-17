@@ -1,0 +1,9 @@
+h3{
+  text-align: center;
+}
+
+.border-component{
+  padding: 1rem;
+  border-radius: 4px;
+  border: white 1px solid;
+}

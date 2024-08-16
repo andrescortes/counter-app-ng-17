@@ -1,1 +1,28 @@
 <h3>Tasks list</h3>
+<ng-container *ngIf="items !==0; else noItems">
+  <article *ngIf="items !==0" class="message is-link has-text-centered mt-4">
+    <div class="message-header">
+      <p>Items</p>
+      <!--    <button class="delete" aria-label="delete"></button>-->
+    </div>
+    <div class="message-body">
+      <p>The numbers of items in the list is: <strong>{{ items }}</strong></p>
+    </div>
+  </article>
+</ng-container>
+
+<ng-template #noItems>
+  <article class="message is-danger has-text-centered">
+    <div class="message-header">
+      <p>Items</p>
+      <!--    <button class="delete" aria-label="delete"></button>-->
+    </div>
+    <div class="message-body">
+      <p>There is not items to show</p>
+    </div>
+  </article>
+</ng-template>
+
+
+
+
