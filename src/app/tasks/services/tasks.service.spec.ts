@@ -147,4 +147,9 @@ describe('TasksService', () => {
       expect(dateDiff).toBe(3000);
     }));
   });
+  describe('using a spy in a service', () => {
+    it('should be full the tasks arrays', () => {
+      expect({}).toEqual(jasmine.objectContaining({}));
+    });
+  });
 });

@@ -6,10 +6,11 @@ const tasksServiceMockSpy = () => jasmine.createSpyObj<TasksService>(
     'deleteTask',
     'completedTask'
   ], {
-    tasks: [{
-      task: 'soccer',
-      completed: false
-    }],
+    tasks: [
+      {task: 'Soccer', completed: false},
+      {task: 'Reading', completed: false},
+      {task: 'Speaking', completed: false}
+    ],
   }
 )
 
