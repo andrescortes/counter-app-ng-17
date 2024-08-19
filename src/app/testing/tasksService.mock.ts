@@ -1,4 +1,4 @@
-import { TasksService } from "../tasks/services/tasks.service";
+import { TasksService } from "../components/tasks/services/tasks.service";
 
 const tasksServiceMockSpy = () => jasmine.createSpyObj<TasksService>(
   'TasksService',

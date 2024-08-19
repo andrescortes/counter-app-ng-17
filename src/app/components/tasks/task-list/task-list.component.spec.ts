@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TaskListComponent } from './task-list.component';
 import { TasksService } from "../services/tasks.service";
-import tasksServiceMock from "../../testing/tasksService.mock";
+import tasksServiceMock from "../../../testing/tasksService.mock";
 
 describe('TaskListComponent', () => {
   let component: TaskListComponent;

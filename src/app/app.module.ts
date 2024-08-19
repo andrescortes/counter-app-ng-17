@@ -2,10 +2,9 @@ import { isDevMode, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { CounterModule } from "./counter/counter.module";
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { TasksModule } from "./tasks/tasks.module";
+
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -22,8 +21,6 @@ import { TasksModule } from "./tasks/tasks.module";
       registrationStrategy: 'registerWhenStable:30000'
     }),
     //custom modules
-    CounterModule,
-    TasksModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

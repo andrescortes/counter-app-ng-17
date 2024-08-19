@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SubtitleComponent } from './subtitle.component';
 import { TasksService } from "../services/tasks.service";
-import tasksServiceMockSpy from "../../testing/tasksService.mock";
+import tasksServiceMockSpy from "../../../testing/tasksService.mock";
 import { DebugElement } from "@angular/core";
 import { By } from "@angular/platform-browser";
 
